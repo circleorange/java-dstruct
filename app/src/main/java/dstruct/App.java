@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 import main.java.dstruct.Array;
 import main.java.dstruct.BubbleSort;
+import main.java.dstruct.SelectionSort;
 
 public class App {
 
@@ -16,9 +17,11 @@ public class App {
         basicArray[2] = 10;
         Array.printArray(basicArray);
         
-        // Bubble Sort
         int[] bubbleArray = { 20, 35, -15, 7, 55, 1 };
         BubbleSort.sort(bubbleArray);
+        
+        int[] selectionArray = { 20, 35, -15, 7, 55, 1 };
+        SelectionSort.sort(selectionArray);
         
     }
 
