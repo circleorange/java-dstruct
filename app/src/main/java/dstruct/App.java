@@ -29,5 +29,7 @@ public class App {
         System.out.println("Iterative Factorial: " + Factorial.interativeFactorial(factorialToCalculate));
         System.out.println("Recursive Factorial: " + Factorial.recursiveFactorial(factorialToCalculate));
 
+        var mergeArray = starterArray.clone();
+        MergeSort.run(mergeArray, 0, mergeArray.length);
     }
 }

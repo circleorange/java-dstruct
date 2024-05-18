@@ -9,3 +9,4 @@
 - Insertion Sort
 - Shell Sort
 - Factorial
+- Merge Sort
