@@ -8,3 +8,4 @@
 - Selection Sort
 - Insertion Sort
 - Shell Sort
+- Factorial

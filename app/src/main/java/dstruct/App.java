@@ -24,6 +24,10 @@ public class App {
 
         var shellArray = starterArray.clone();
         ShellSort.sort(shellArray);
-    }
 
+        var factorialToCalculate = 5;
+        System.out.println("Iterative Factorial: " + Factorial.interativeFactorial(factorialToCalculate));
+        System.out.println("Recursive Factorial: " + Factorial.recursiveFactorial(factorialToCalculate));
+
+    }
 }
