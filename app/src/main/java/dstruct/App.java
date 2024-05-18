@@ -10,15 +10,20 @@ public class App {
         basicArray[1] = 15;
         basicArray[2] = 10;
         Array.printArray(basicArray);
+       
+        int[] starterArray = { 20, 35, -15, 7, 55, 1, 10, 11, 65, -5, 3, 54, 32 }; 
         
-        int[] bubbleArray = { 20, 35, -15, 7, 55, 1 };
+        var bubbleArray = starterArray.clone();
         BubbleSort.sort(bubbleArray);
         
-        int[] selectionArray = { 20, 35, -15, 7, 55, 1 };
+        var selectionArray = starterArray.clone();
         SelectionSort.sort(selectionArray);
        
-        int[] insertionArray = { 20, 35, -15, 7, 55, 1 };
+        var insertionArray = starterArray.clone();
         InsertionSort.sort(insertionArray);
+
+        var shellArray = starterArray.clone();
+        ShellSort.sort(shellArray);
     }
 
 }

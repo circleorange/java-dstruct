@@ -1,6 +1,7 @@
 package dstruct;
 
-public class Utils {
+public class Utils 
+{
     public static void swap(int[] array, int i, int j) 
     {
         if (i == j) { return; } // no elements to swap 

@@ -34,6 +34,6 @@ public class InsertionSort
             }
             array[i] = newElement;
         }
-        System.out.println("Insertion Sort array before: " + Arrays.toString(array));
+        System.out.println("Insertion Sort array after: " + Arrays.toString(array));
     }
 }
