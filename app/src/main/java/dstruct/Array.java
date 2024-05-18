@@ -2,18 +2,12 @@ package main.java.dstruct;
 
 public class Array {
 
-    private int [] array;
-    
     public Array() {
-
-        array = new int[3];
-
-        array[0] = 20;
-        array[1] = 15;
-        array[2] = 10;
     }
 
-    public int[] getArray() {
-        return array;
+    public static void printArray(int[] arrayData) {
+        for (int i = 0; i < arrayData.length; i++) {
+            System.out.println(arrayData[i]);
+        }
     }
 }
