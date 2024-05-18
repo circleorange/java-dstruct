@@ -1,4 +1,4 @@
-package main.java.dstruct;
+package dstruct;
 
 import java.util.Arrays;
 
@@ -27,19 +27,10 @@ public class BubbleSort {
         ) {
             for (int i = 0; i < lastUnsortedIndex; i++) {
                 if (array[i] > array[i + 1]) {
-                    swap(array, i, i + 1);
+                    Utils.swap(array, i, i + 1);
                 }
             }
         }
         System.out.println("Bubble Array after sort: " + Arrays.toString(array));
-    }
-
-    public static void swap(int[] array, int i, int j) 
-    {
-        if (i == j) { return; } // no elements to swap 
-
-        var temp = array[i];
-        array[i] = array[j];
-        array[j] = temp;
     }
 }

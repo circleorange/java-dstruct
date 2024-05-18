@@ -1,11 +1,5 @@
 package dstruct;
 
-import java.util.Arrays;
-
-import main.java.dstruct.Array;
-import main.java.dstruct.BubbleSort;
-import main.java.dstruct.SelectionSort;
-
 public class App {
 
     public static void main(String[] args) {
@@ -22,7 +16,9 @@ public class App {
         
         int[] selectionArray = { 20, 35, -15, 7, 55, 1 };
         SelectionSort.sort(selectionArray);
-        
+       
+        int[] insertionArray = { 20, 35, -15, 7, 55, 1 };
+        InsertionSort.sort(insertionArray);
     }
 
 }

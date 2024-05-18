@@ -1,4 +1,4 @@
-package main.java.dstruct;
+package dstruct;
 
 public class Array {
 

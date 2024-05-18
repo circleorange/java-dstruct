@@ -1,4 +1,4 @@
-package main.java.dstruct;
+package dstruct;
 
 import java.util.Arrays;
 
@@ -18,7 +18,7 @@ public class SelectionSort
             for (int i = 1; i <= lastUnsortedIndex; i++) {
                 if (array[i] > array[largest]) { largest = i; }
             }
-            BubbleSort.swap(array, largest, lastUnsortedIndex);
+            Utils.swap(array, largest, lastUnsortedIndex);
         }
         
         System.out.println("Selection Sort array after: " + Arrays.toString(array));
