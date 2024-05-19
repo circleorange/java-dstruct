@@ -16,5 +16,5 @@
 
 ### List Algorithms
 - Functions of List interface
-
-## Vectors
+- Singly Linked Lists
+- Double Linked Lists

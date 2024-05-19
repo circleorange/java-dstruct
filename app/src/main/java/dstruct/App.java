@@ -1,5 +1,7 @@
 package dstruct;
 
+import dstruct.dllist.Student;
+import dstruct.dllist.StudentLinkedList;
 import dstruct.list.Employee;
 import dstruct.list.EmployeeLinkedList;
 import dstruct.sort.Array;
@@ -23,6 +25,39 @@ public class App
         runSort();
         runList();
         runLinkedList();
+        runDoublyLinkedList();
+    }
+
+    public static void runDoublyLinkedList()
+    {
+        StudentLinkedList dllist = new StudentLinkedList();
+        
+        var kindred = new Student ("Kindred", "Bot", 131);
+        var yasuo = new Student ("Yasuo", "Top", 132);
+        var zed = new Student ("Zed", "Mid", 133);
+        var yone = new Student ("Yone", "Jungle", 134);
+        
+        dllist.addToFront(kindred);
+        dllist.addToFront(yasuo);
+        dllist.addToFront(zed);
+        dllist.addToFront(yone);
+        
+        print ("Linked List is empty? " + dllist.isEmpty());
+        print ("Linked List size: " + dllist.getSize());
+        dllist.print();
+
+        dllist.removeFromFront();
+        print ("Linked List size: " + dllist.getSize());
+        dllist.print();
+        
+        var soraka = new Student ("Soraka", "Jungle", 135);
+        dllist.addToEnd(soraka);
+        print ("Linked List size: " + dllist.getSize());
+        dllist.print();
+
+        dllist.removeFromEnd();
+        print ("Linked List size: " + dllist.getSize());
+        dllist.print();
     }
 
     public static void runLinkedList()
