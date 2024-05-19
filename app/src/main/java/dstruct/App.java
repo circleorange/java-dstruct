@@ -1,6 +1,7 @@
 package dstruct;
 
 import dstruct.list.Employee;
+import dstruct.list.EmployeeLinkedList;
 import dstruct.sort.Array;
 import dstruct.sort.BubbleSort;
 import dstruct.sort.Factorial;
@@ -13,6 +14,7 @@ import dstruct.sort.ShellSort;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Vector;
 
 public class App 
 {
@@ -20,6 +22,50 @@ public class App
     {
         runSort();
         runList();
+        runLinkedList();
+    }
+
+    public static void runLinkedList()
+    {
+        EmployeeLinkedList llist = new EmployeeLinkedList();
+        
+        var kalista = new Employee ("Kalista", "Bot", 127);
+        var vayne = new Employee ("Vayne", "Top", 128);
+        var swain = new Employee ("Swain", "Mid", 129);
+        var garen = new Employee ("Garen", "Jungle", 130);
+        
+        llist.addToFront(kalista);
+        llist.addToFront(vayne);
+        llist.addToFront(swain);
+        llist.addToFront(garen);
+
+        var llistSize = llist.getSize();
+        var llistIsEmpty = llist.isEmpty();
+        
+        print ("Linked List is empty? " + llistIsEmpty);
+        print ("Linked List size: " + llistSize);
+        llist.print();
+
+        llist.removeFromFront();
+        llistSize = llist.getSize();
+        
+        print ("Linked List size: " + llistSize);
+        llist.print();
+    }
+
+    public static void runVector()
+    {
+        /*
+         * Given that `Vector` implements same class as `List`, it can easily be substituted
+         * It has higher overhead costs due to built-in thread synchronization
+         * Apart from that, everything is same as List
+         */
+        List<Employee> empList = new Vector<>();
+        empList.add (new Employee ("Kalista", "Bot", 127));
+        empList.add (new Employee ("Vayne", "Top", 128));
+        empList.add (new Employee ("Swain", "Mid", 129));
+        empList.add (new Employee ("Garen", "Jungle", 130));
+
     }
 
     public static void runList()
