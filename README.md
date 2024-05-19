@@ -10,3 +10,4 @@
 - Shell Sort
 - Factorial
 - Merge Sort
+- Quick Sort

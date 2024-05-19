@@ -1,5 +1,7 @@
 package dstruct;
 
+import java.util.Arrays;
+
 public class App {
 
     public static void main(String[] args) {
@@ -31,5 +33,16 @@ public class App {
 
         var mergeArray = starterArray.clone();
         MergeSort.run(mergeArray, 0, mergeArray.length);
+        
+        var quickArray = starterArray.clone();
+        print("Quick Sort array before: " + Arrays.toString(quickArray));
+        
+        QuickSort.run(quickArray, 0, quickArray.length);
+        print("Quick Sort array after: " + Arrays.toString(quickArray));
+    }
+
+    public static void print (String message)
+    {
+        System.out.println(message);
     }
 }
