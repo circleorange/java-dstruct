@@ -1,7 +1,6 @@
 package dstruct;
 
-import java.util.Arrays;
-
+import dstruct.list.Employee;
 import dstruct.sort.Array;
 import dstruct.sort.BubbleSort;
 import dstruct.sort.Factorial;
@@ -11,11 +10,49 @@ import dstruct.sort.QuickSort;
 import dstruct.sort.SelectionSort;
 import dstruct.sort.ShellSort;
 
+import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
+
 public class App 
 {
     public static void main(String[] args) 
     {
         runSort();
+        runList();
+    }
+
+    public static void runList()
+    {
+        List<Employee> employeeList = new ArrayList<>();
+        
+        employeeList.add (new Employee ("Jane", "Jones", 123));
+        employeeList.add (new Employee ("John", "Doe", 124));
+        employeeList.add (new Employee ("Mary", "Smith", 125));
+        employeeList.add (new Employee ("Mike", "Wilson", 126));
+
+        employeeList.forEach(employee -> print(employee));  // iterate over list element
+        var specificEmployee = employeeList.get(1);         // retrieve specific element
+        var isEmployeeListEmpty = employeeList.isEmpty();
+        var employeeListSize = employeeList.size();
+        var empListContains = employeeList.contains (new Employee ("Mary", "Smith", 125));
+        var indexOfElement = employeeList.indexOf(new Employee("John", "Doe", 124));
+        employeeList.remove(2);
+        
+        print ("Specific element" + specificEmployee);
+        print ("Is list empty? " + isEmployeeListEmpty);
+        print ("Number of Employees: " + employeeListSize);
+        print ("Mary is employed: " + empListContains);
+        print ("Index of Employee: " + indexOfElement);
+        
+        // update existing element
+        employeeList.set (1, new Employee ("John", "Adams", 124));
+        print ("Updated specific element: " + employeeList.get(1));
+
+        Employee[] employeeArray = employeeList.toArray (new Employee[employeeList.size()]);
+        for (Employee employee : employeeArray) {
+            print ("Employee Array: " + employee);
+        }
     }
 
     public static void runSort()
@@ -57,8 +94,8 @@ public class App
         print("Quick Sort array after: " + Arrays.toString(quickArray));
     }
 
-    public static void print (String message)
+    public static void print (Object arg0)
     {
-        System.out.println(message);
+        System.out.println(arg0);
     }
 }
