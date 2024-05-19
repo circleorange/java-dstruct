@@ -1,7 +1,5 @@
 package dstruct;
 
-import java.util.Arrays;
-
 public class ShellSort 
 {
     /*
@@ -10,7 +8,6 @@ public class ShellSort
      */
     public static void sort (int[] array)
     {
-        System.out.println("Shell Sort array before: " + Arrays.toString(array));
         for (int gap = array.length / 2; gap > 0; gap /= 2) {
             for (int i = gap; i < array.length; i ++) {
                 var newElement = array[i];
@@ -24,6 +21,5 @@ public class ShellSort
                 array[j] = newElement;
             }
         }
-        System.out.println("Shell Sort array after: " + Arrays.toString(array));
     }
 }

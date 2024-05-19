@@ -1,14 +1,10 @@
 package dstruct;
 
-import java.util.Arrays;
-
 public class MergeSort 
 {
     public static void run (int[] array, int start, int end)
     {
-        System.out.println("Merge Sort array before: " + Arrays.toString(array));
         split (array, start, end);
-        System.out.println("Merge Sort array after: " + Arrays.toString(array));
     }
     
     public static void split (int[] array, int start, int end)

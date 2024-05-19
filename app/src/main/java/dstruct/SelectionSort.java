@@ -1,13 +1,9 @@
 package dstruct;
 
-import java.util.Arrays;
-
 public class SelectionSort 
 {
     public static void sort (int[] array)
     {
-        System.out.println("Selection Sort array before: " + Arrays.toString(array));
-        
         for (
             int lastUnsortedIndex = array.length - 1;
             lastUnsortedIndex > 0;
@@ -20,7 +16,5 @@ public class SelectionSort
             }
             Utils.swap(array, largest, lastUnsortedIndex);
         }
-        
-        System.out.println("Selection Sort array after: " + Arrays.toString(array));
     }
 }

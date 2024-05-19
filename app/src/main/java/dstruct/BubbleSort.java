@@ -1,7 +1,5 @@
 package dstruct;
 
-import java.util.Arrays;
-
 public class BubbleSort {
 
     public BubbleSort() {
@@ -18,8 +16,6 @@ public class BubbleSort {
      */
     public static void sort(int[] array) 
     {
-        System.out.println("Bubble Array before sort: " + Arrays.toString(array));
-
         for (
             int lastUnsortedIndex = array.length - 1; 
             lastUnsortedIndex > 0; 
@@ -31,6 +27,5 @@ public class BubbleSort {
                 }
             }
         }
-        System.out.println("Bubble Array after sort: " + Arrays.toString(array));
     }
 }

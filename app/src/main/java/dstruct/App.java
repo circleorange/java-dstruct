@@ -13,31 +13,33 @@ public class App {
         basicArray[2] = 10;
         Array.printArray(basicArray);
        
+        var factorialToCalculate = 5;
+        print("Iterative Factorial: " + Factorial.interativeFactorial(factorialToCalculate));
+        print("Recursive Factorial: " + Factorial.recursiveFactorial(factorialToCalculate));
+
         int[] starterArray = { 20, 35, -15, 7, 55, 1, 10, 11, 65, -5, 3, 54, 32 }; 
         
         var bubbleArray = starterArray.clone();
-        BubbleSort.sort(bubbleArray);
-        
         var selectionArray = starterArray.clone();
-        SelectionSort.sort(selectionArray);
-       
         var insertionArray = starterArray.clone();
-        InsertionSort.sort(insertionArray);
-
         var shellArray = starterArray.clone();
-        ShellSort.sort(shellArray);
-
-        var factorialToCalculate = 5;
-        System.out.println("Iterative Factorial: " + Factorial.interativeFactorial(factorialToCalculate));
-        System.out.println("Recursive Factorial: " + Factorial.recursiveFactorial(factorialToCalculate));
-
         var mergeArray = starterArray.clone();
-        MergeSort.run(mergeArray, 0, mergeArray.length);
-        
         var quickArray = starterArray.clone();
-        print("Quick Sort array before: " + Arrays.toString(quickArray));
         
+        print("Starting array for all before sort: " + Arrays.toString(quickArray));
+        
+        BubbleSort.sort(bubbleArray);
+        SelectionSort.sort(selectionArray);
+        InsertionSort.sort(insertionArray);
+        ShellSort.sort(shellArray);
+        MergeSort.run(mergeArray, 0, mergeArray.length);
         QuickSort.run(quickArray, 0, quickArray.length);
+        
+        print("Bubble Sort array after: " + Arrays.toString(bubbleArray));
+        print("Selection Sort array after: " + Arrays.toString(selectionArray));
+        print("Insertion Sort array after: " + Arrays.toString(insertionArray));
+        print("Shell Sort array after: " + Arrays.toString(shellArray));
+        print("Merge Sort array after: " + Arrays.toString(mergeArray));
         print("Quick Sort array after: " + Arrays.toString(quickArray));
     }
 

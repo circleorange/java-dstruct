@@ -1,12 +1,9 @@
 package dstruct;
 
-import java.util.Arrays;
-
 public class InsertionSort 
 {
     public static void sort (int[] array) 
     {
-        System.out.println("Insertion Sort array before: " + Arrays.toString(array));
         /*
          * After every iteration, the first unsorted index will increase by 1
          * as we are moving left to right and growing the sorted partition
@@ -34,6 +31,5 @@ public class InsertionSort
             }
             array[i] = newElement;
         }
-        System.out.println("Insertion Sort array after: " + Arrays.toString(array));
     }
 }
