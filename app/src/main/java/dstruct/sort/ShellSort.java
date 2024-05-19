@@ -1,4 +1,4 @@
-package dstruct;
+package dstruct.sort;
 
 public class ShellSort 
 {

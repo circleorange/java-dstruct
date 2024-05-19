@@ -2,10 +2,24 @@ package dstruct;
 
 import java.util.Arrays;
 
-public class App {
+import dstruct.sort.Array;
+import dstruct.sort.BubbleSort;
+import dstruct.sort.Factorial;
+import dstruct.sort.InsertionSort;
+import dstruct.sort.MergeSort;
+import dstruct.sort.QuickSort;
+import dstruct.sort.SelectionSort;
+import dstruct.sort.ShellSort;
 
-    public static void main(String[] args) {
-        
+public class App 
+{
+    public static void main(String[] args) 
+    {
+        runSort();
+    }
+
+    public static void runSort()
+    {
         // Array
         var basicArray = new int[3];
         basicArray[0] = 20;
