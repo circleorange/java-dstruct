@@ -30,6 +30,10 @@ public class App
 
     public static void runDoublyLinkedList()
     {
+        /*
+         * Example of custom implementation of Linked List
+         * However JDK already provides implementation of LinkedList
+         */
         StudentLinkedList dllist = new StudentLinkedList();
         
         var kindred = new Student ("Kindred", "Bot", 131);
