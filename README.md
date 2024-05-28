@@ -5,6 +5,9 @@
 
 ## Features
 
+### Stacks
+- Stack backed by array
+
 ### Sorting Algorithms
 - Bubble Sort
 - Selection Sort
