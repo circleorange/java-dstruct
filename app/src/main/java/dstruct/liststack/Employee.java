@@ -1,4 +1,4 @@
-package dstruct.stack;
+package dstruct.liststack;
 
 public class Employee 
 {

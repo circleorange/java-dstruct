@@ -7,6 +7,7 @@
 
 ### Stacks
 - Stack backed by array
+- Stack backed by list array
 
 ### Sorting Algorithms
 - Bubble Sort

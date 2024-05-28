@@ -1,4 +1,4 @@
-package dstruct.stack;
+package dstruct.arraystack;
 
 import java.util.EmptyStackException;
 
