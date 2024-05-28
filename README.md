@@ -17,4 +17,4 @@
 ### List Algorithms
 - Functions of List interface
 - Singly Linked Lists
-- Double Linked Lists
+- Doubly Linked Lists

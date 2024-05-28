@@ -17,6 +17,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Vector;
+import java.util.Iterator;
+import java.util.LinkedList;
 
 public class App 
 {
@@ -26,6 +28,28 @@ public class App
         runList();
         runLinkedList();
         runDoublyLinkedList();
+    }
+
+    public static void runJdkLinkedList()
+    {
+        var kindred = new Student ("Kindred", "Bot", 131);
+        var yasuo = new Student ("Yasuo", "Top", 132);
+        var zed = new Student ("Zed", "Mid", 133);
+        var yone = new Student ("Yone", "Jungle", 134);
+        
+        LinkedList<Student> dllist = new LinkedList<>();
+       
+        dllist.addFirst(kindred);
+        dllist.addFirst(yasuo);
+        dllist.addFirst(zed);
+        dllist.addFirst(yone);
+
+        Iterator iter = dllist.iterator();
+
+        while (iter.hasNext())
+        {
+            System.out.println(iter.next());
+        }
     }
 
     public static void runDoublyLinkedList()
