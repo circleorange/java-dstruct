@@ -1,7 +1,7 @@
 package dstruct;
 
-import dstruct.liststack.Employee;
-import dstruct.liststack.LinkedStack;
+import dstruct.arrayqueue.ArrayQueue;
+import dstruct.arrayqueue.Employee;
 
 public class App 
 {
@@ -12,22 +12,23 @@ public class App
         var zed = new Employee ("Zed", "Mid", 133);
         var yone = new Employee ("Yone", "Jungle", 134);
 
-        LinkedStack stack = new LinkedStack();
+        ArrayQueue queue = new ArrayQueue(5);
 
-        print ("Adding objects to stack...");
-       
-        stack.push(kindred);
-        stack.push(yasuo);
-        stack.push(zed);
-        stack.push(yone);
+        queue.add(kindred);
+        queue.add(yasuo);
+        queue.add(zed);
+        queue.add(yone);
 
-        stack.printStack();
+        queue.printQueue();
 
-        print ("Stack top: " + stack.peek());
+        print("Removing top element...");
 
-        stack.pop();
+        queue.remove();
 
-        print ("Stack top: " + stack.peek());
+        queue.printQueue();
+
+        print("Peeking queue...");
+        print(queue.peek());
     }
 
     public static void print (Object arg0)

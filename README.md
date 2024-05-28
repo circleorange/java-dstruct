@@ -5,6 +5,9 @@
 
 ## Features
 
+### Queues
+- Array queue
+
 ### Stacks
 - Stack backed by array
 - Stack backed by list array
