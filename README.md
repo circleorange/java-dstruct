@@ -5,6 +5,9 @@
 
 ## Features
 
+### Hash Tables
+- Hash Table (Array Implementation)
+
 ### Queues
 - Array queue
 
