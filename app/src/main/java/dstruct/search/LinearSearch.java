@@ -1,4 +1,4 @@
-package dstruct.linearsearch;
+package dstruct.search;
 
 public class LinearSearch {
 

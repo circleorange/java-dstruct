@@ -7,6 +7,7 @@
 
 ### Search Algorithms
 - Linear Search
+- Binary Search
 
 ### Hash Tables
 - Hash Table (Array Implementation)
