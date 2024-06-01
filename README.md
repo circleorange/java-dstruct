@@ -5,6 +5,9 @@
 
 ## Features
 
+### Search Algorithms
+- Linear Search
+
 ### Hash Tables
 - Hash Table (Array Implementation)
 - Chained Hash Table

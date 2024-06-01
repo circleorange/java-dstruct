@@ -1,30 +1,14 @@
 package dstruct;
 
-import dstruct.Employee;
-import dstruct.chainedhashtable.ChainedHashTable;
+import dstruct.linearsearch.LinearSearch;
 
 public class App {
 
     public static void main(String[] args) {
 
-        var kindred = new Employee ("Kindred", "Bot", 131);
-        var yasuo = new Employee ("Yasuo", "Top", 132);
-        var zed = new Employee ("Zed", "Mid", 133);
-        var yone = new Employee ("Yone", "Jungle", 134);
-
-        ChainedHashTable sht = new ChainedHashTable();
-        
-        sht.put("kindred", kindred);
-        sht.put("yasuo", yasuo);
-        sht.put("zedd", zed);
-        sht.put("yone", yone);
-
-        sht.print();
-        print("Retrieve employee: " + sht.get("yone"));
-        print("Removing employee...");
-        sht.remove("yasuo");
-        sht.print();
-        print("Retrieve employee: " + sht.get("kindred"));
+        int[] array = { 20, -35, -15, 7, 55, 1, -22 };
+        LinearSearch ls = new LinearSearch(array);
+        print("Result: " + ls.find(-15));
     }
 
     public static void print (Object arg0) {
