@@ -7,6 +7,7 @@
 
 ### Hash Tables
 - Hash Table (Array Implementation)
+- Chained Hash Table
 
 ### Queues
 - Array queue
