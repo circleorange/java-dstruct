@@ -5,6 +5,9 @@
 
 ## Features
 
+### Trees
+- Binary Search Tree
+
 ### Search Algorithms
 - Linear Search
 - Binary Search
