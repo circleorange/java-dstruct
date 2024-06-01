@@ -1,7 +1,7 @@
 package dstruct;
 
-import dstruct.hashtable.Employee;
-import dstruct.hashtable.SimpleHashTable;
+import dstruct.Employee;
+import dstruct.chainedhashtable.ChainedHashTable;
 
 public class App {
 
@@ -12,7 +12,7 @@ public class App {
         var zed = new Employee ("Zed", "Mid", 133);
         var yone = new Employee ("Yone", "Jungle", 134);
 
-        SimpleHashTable sht = new SimpleHashTable();
+        ChainedHashTable sht = new ChainedHashTable();
         
         sht.put("kindred", kindred);
         sht.put("yasuo", yasuo);
