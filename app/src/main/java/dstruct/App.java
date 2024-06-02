@@ -23,6 +23,9 @@ public class App {
 
         print("Minimum Value: " + intTree.min());
         print("Maximum Value: " + intTree.max());
+
+        intTree.delete(26);
+        intTree.traverseInOrder();
     }
 
     public static void print (Object arg0) {

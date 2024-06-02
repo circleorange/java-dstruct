@@ -25,7 +25,6 @@ public class TreeNode {
     }
 
     public int min () {
-
         if (leftChild == null) return data;
 
         return leftChild.min();
