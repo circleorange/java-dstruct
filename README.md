@@ -24,6 +24,7 @@
 - Stack backed by list array
 
 ### Sorting Algorithms
+- Radix Sort
 - Bubble Sort
 - Selection Sort
 - Insertion Sort
